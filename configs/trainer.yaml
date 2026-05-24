@@ -1,0 +1,17 @@
+# lightning.pytorch==2.2.0.post0
+seed_everything: 42
+trainer:
+  precision: bf16-mixed
+  logger:
+    class_path: CustomWandbLogger
+    init_args:
+      project: tite
+    dict_kwargs:
+      entity: tite
+  callbacks:
+    - class_path: ModelCheckpoint
+    - class_path: LearningRateMonitor
+      init_args:
+        logging_interval: step
+  max_steps: 200000
+  enable_progress_bar: false
