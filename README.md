@@ -1,6 +1,6 @@
 # TITE
 
-This repository contains the code for the paper "Evaluating Pre-Training Techniques for TITE" submitted to CLEF 2026.
+This repository contains the code for the paper "Evaluating Pre-Training Objectives for TITE" submitted to CLEF 2026.
 
 The `tite` directory contains all code for modeling, data processing, and pre-training. The `main.py` script is the entrypoint for pre-training and uses [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/) to manage training. The `configs` directory contains the configuration files for pre-training.
 
